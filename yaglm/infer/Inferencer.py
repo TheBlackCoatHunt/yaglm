@@ -95,7 +95,7 @@ class Inferencer(Config):
             else:
                 self.scale_ = None
 
-    def after_fit(self, estimator, X, y, sample_weight=None):
+    def after_fit(self, estimator, X, y, sample_weight=None, offsets=None):
         """
         Runs inferences procedures after fitting the estimator e.g. estimating the degrees of freedom.
 
