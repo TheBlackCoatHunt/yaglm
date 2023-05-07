@@ -717,7 +717,7 @@ class BaseGlm(BaseEstimator):
             inferencer = deepcopy(self.inferencer)
             inferencer.pre_fit(estimator=self, X=X, y=y,
                                sample_weight=sample_weight,
-                               offsets=None)
+                               offsets=offsets)
             return inferencer
 
         else:
