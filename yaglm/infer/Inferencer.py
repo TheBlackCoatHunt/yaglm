@@ -42,7 +42,7 @@ class Inferencer(Config):
     @autoassign
     def __init__(self, dof='support', scale=None): pass
 
-    def pre_fit(self, estimator, X, y, sample_weight=None):
+    def pre_fit(self, estimator, X, y, sample_weight=None, offsets=None):
         """
         Runs inferences procedures before fitting the estimator e.g. estimating the scale parameter.
 
